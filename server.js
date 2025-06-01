@@ -16,6 +16,7 @@ app.use(morgan("dev"));
 
 
 // rutas
+app.use('/students', require('./routes/studentRoutes'));
 app.get('/', (req, res) => {
   res.send('<h1>hola mi serverNava Node Mysql APP</h1>');
 });
